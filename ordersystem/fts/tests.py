@@ -12,6 +12,7 @@ class PollsTest(LiveServerTestCase):
     def tearDown(self):
         self.browser.quit()
 
+#     00000
 #     def test_get_chicago_binding_order_page(self):
 #         # Chris opens web browser and looks at page for ordering Chicago Binding
 #         self.browser.get(self.live_server_url + '/chicagobinding')
