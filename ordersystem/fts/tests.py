@@ -20,7 +20,7 @@ class PollsTest(LiveServerTestCase):
 #         #TODO:
 #         self.fail('finish this test')
 
-    def test_can_create_new_poll_via_admin_site(self):
+    def test_can_create_new_product_via_admin_site(self):
         # Gertrude opens her web browser, and goes to the admin page
         self.browser.get(self.live_server_url + '/admin/')
 
@@ -41,9 +41,9 @@ class PollsTest(LiveServerTestCase):
         body = self.browser.find_element_by_tag_name('body')
         self.assertIn('Site administration', body.text)
 
-        # She now sees a couple of hyperlink that says "Polls"
-        polls_links = self.browser.find_elements_by_link_text('Polls')
-        self.assertEquals(len(polls_links), 2, msg="should be 2 poll links")
+        # She now sees a couple of hyperlink that says "Orders"
+        orders_links = self.browser.find_elements_by_link_text('Orders')
+        self.assertEquals(len(orders_links), 2, msg="should be 2 Orders links")
 
-        # TODO: use the admin site to create a Poll
+        # TODO: use the admin site to create a Order
         self.fail('finish this test')
